@@ -1,10 +1,13 @@
 {
-  "name": "djangodemo",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "private": true
+  "builds": [{
+    "src": "EdTechSubscription/wsgi.py",
+    "use": "@vercel/python",
+    "config": { "maxLambdaSize": "15mb", "runtime": "python3.9" }
+  }],
+  "routes": [
+  {
+    "src": "/(.*)",
+    "dest": "EdTechSubscription/wsgi.py"
+}
+]
 }

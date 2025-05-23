@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Saved Employer Info</title>
+</head>
+<body>
+    <h1>Stored Employer Information</h1>
+    {% for employer in employers %}
+        <div>
+            <p><strong>Company:</strong> {{ employer.company_name }}</p>
+            <p><strong>EIN:</strong> {{ employer.ein }}</p>
+            <p><strong>State:</strong> {{ employer.state }}</p>
+            <p><strong>Locality:</strong> {{ employer.locality }}</p>
+            <p><strong>Address:</strong> {{ employer.address }}</p>
+            <p><strong>Zipcode:</strong> {{ employer.zipcode }}</p>
+            <p><strong>SSN:</strong> {{ employer.ssn }}</p>
+            <hr>
+        </div>
+    {% empty %}
+        <p>No employer data found.</p>
+    {% endfor %}
+</body>

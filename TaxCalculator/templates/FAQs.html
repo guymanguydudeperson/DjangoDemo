@@ -60,7 +60,7 @@
     <div id="collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
       <div class="accordion-body">
         <strong> Gather your W-2, </strong> choose a filing method (online, professional, or manual), complete your return, and submit it by April 15.
-          <li><a href="UnderstandingTax.html">Click here for more info.</a></li>
+          <li><a href="{% url 'UnderstandingTax' %}">Click here for more info.</a></li>
       </div>
     </div>
   </div>
@@ -75,7 +75,7 @@
     <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
       <div class="accordion-body">
         A <strong>W-2 shows your annual earnings and taxes withheld. </strong> Employers must provide it by January 31.
-          <li><a href="UnderstandingW2.html">Learn more here.</a></li>
+          <li><a href="{% url 'UnderstandingW2' %}"> Learn more here.</a></li>
 
       </div>
     </div>
@@ -116,6 +116,16 @@
         <strong> A Zipcode </strong> is a group of five or nine numbers that are added to a postal address to assist the sorting of mail.
       </div>
     </div>
+                        <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSix">
+ What is meant by "State wages, tips"?
+      </button>
+    </h2>
+    <div id="collapseSeven" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <strong> "State wages, tips" is the amount of money you earned in your state </strong>  (like from your job), including:  Your regular pay (wages), tips you reported, any other taxable income from your employer. This is the money that your state uses to calculate state income tax.
+      </div>
   </div>
      </div>
 

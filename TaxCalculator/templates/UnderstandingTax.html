@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Understanding Your W-2</title>
+    <title>Understanding Taxes</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 
@@ -15,37 +15,43 @@
 
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="Overview.html">EasyforEmployers</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link" href="Employee.html">Employee Breakdown</a></li>
-                    <li class="nav-item"><a class="nav-link" href="InfoAnalysis.html">Your Breakdown</a></li>
-                </ul>
-            </div>
+    <nav
+        class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="{% url 'home' %}">EasyforEmployers</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="{% url 'employee' %}">Employee Breakdown</a></li>
+                <li class="nav-item"><a class="nav-link" href="{% url 'info' %}">Your Breakdown</a></li>
+            </ul>
         </div>
-    </nav>
+    </div>
+</nav>
 
 
 
     <div class="container mt-4">
-        <h1 class="text-center text-white">Understanding Your W-2</h1>
-        <p class="text-center text-white">A guide to what your W-2 means and how to use it.</p>
+        <h1 class="text-center text-white">Understanding Taxes</h1>
+        <p class="text-center text-white">A brief guide on how to file your taxes and more.</p>
 
         <div class="accordion" id="w2Accordion">
             <div class="accordion-item">
                 <h2 class="accordion-header">
                     <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#w2WhatIsIt">
-                        What is a W-2?
+                        How do I file my taxes?
                     </button>
                 </h2>
                 <div id="w2WhatIsIt" class="accordion-collapse collapse show" data-bs-parent="#w2Accordion">
                     <div class="accordion-body">
-                        A W-2 is a tax form that employers send to employees, summarizing annual earnings and tax withholdings.
+                       <ul>
+                           <li><strong>Gather your documents </strong> - You'll need your W-2 (or 1099 if you're a contractor), last year's tax return, and any deduction-related paperwork.</li>
+                           <li><strong>Choose how to file</strong> - You can use online tax software, hire a professional, or file manually using IRS forms.</li>
+                           <li><strong>Complete your tax return</strong> - Enter your income, deductions, and credits to determine your tax refund or what you owe.</li>
+                           <li><strong>Submit before the deadline</strong> - The tax filing deadline is usually April 15. File electronically for faster processing.</li>
+                       </ul>
                     </div>
                 </div>
             </div>
@@ -53,16 +59,13 @@
             <div class="accordion-item">
                 <h2 class="accordion-header">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#w2Sections">
-                        What are the key sections of a W-2?
+                       What is a tax refund?
                     </button>
                 </h2>
                 <div id="w2Sections" class="accordion-collapse collapse" data-bs-parent="#w2Accordion">
                     <div class="accordion-body">
                         <ul>
-                            <li><strong>Wages & Salaries:</strong> Your total earnings before taxes.</li>
-                            <li><strong>Federal Income Tax Withheld:</strong> Taxes deducted by your employer.</li>
-                            <li><strong>Social Security & Medicare:</strong> Contributions deducted from your wages.</li>
-                            <li><strong>Employer & Employee Info:</strong> Identifying details like your SSN and your employer’s EIN.</li>
+                            A refund is money the IRS returns if you paid more in taxes than you owed. You can get it faster by filing electronically and choosing direct deposit.
                         </ul>
                     </div>
                 </div>
@@ -71,12 +74,12 @@
             <div class="accordion-item">
                 <h2 class="accordion-header">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#w2When">
-                        When do I get my W-2?
+                       What happens if I file late?
                     </button>
                 </h2>
                 <div id="w2When" class="accordion-collapse collapse" data-bs-parent="#w2Accordion">
                     <div class="accordion-body">
-                        Employers must send W-2 forms by January 31 each year for the previous tax year.
+                       If you miss the April 15 deadline, you may face penalties and interest on unpaid taxes. File an extension if needed, but pay what you owe to avoid extra fees.
                     </div>
                 </div>
             </div>
@@ -84,19 +87,19 @@
             <div class="accordion-item">
                 <h2 class="accordion-header">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#w2WhatToDo">
-                        What do I do with my W-2?
+                      What is tax withholding?
                     </button>
                 </h2>
                 <div id="w2WhatToDo" class="accordion-collapse collapse" data-bs-parent="#w2Accordion">
                     <div class="accordion-body">
-                        You use your W-2 to file your tax return (Form 1040). It helps determine if you owe taxes or get a refund.
+                       Your employer withholds taxes from your paycheck based on your W-4 form. If too much is withheld, you get a refund. If too little, you may owe taxes.
                     </div>
                 </div>
             </div>
         </div>
 
         <div class="text-center mt-4">
-            <a href="FAQs.html" class="btn btn-light">Back to FAQs</a>
+            <a href="{% url 'FAQs' %}" class="btn btn-light">Back to FAQs</a>
         </div>
     </div>
 

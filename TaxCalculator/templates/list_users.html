@@ -3,18 +3,117 @@
 <head>
     <meta charset="UTF-8">
     <title>List Users</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
-<body>
-<h1>User List</h1>
-<a href="{% url 'add_user' %}">Add New User</a>
-<ul>
-    {% if users %}
-        {% for key, user in users.items %}
-            <li>{{ user.name }} - {{ user.email }}</li>
-        {% endfor %}
-    {% else %}
-        <li>No users found.</li>
-    {% endif %}
-</ul>
+<body class="bg-light text-dark">
+
+<div class="container py-5">
+    <div class="card shadow-lg">
+    <div class="card-header bg-primary text-white">
+            <h3 class="mb-0">Employer Information</h3>
+        </div>
+        <div class="card-body">
+            {% if info %}
+                <div class="table-responsive">
+                    <table class="table table-bordered table-striped table-hover align-middle">
+                        <thead class="table-light">
+                            <tr>
+                                <th>Unique Key</th>
+                                <th>(c)Name</th>
+                                <th>(b)EIN</th>
+                                <th>(15)State of residency</th>
+                                <th>(20)Locality</th>
+                                <th>(c)Address</th>
+                                <th>(c)Zipcode</th>
+                                <th>(c)SSN</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for key, info in info.items %}
+                                <tr>
+                                    <td>{{ key }}</td>
+                                    <td>{{ info.NAME }}</td>
+                                    <td>{{ info.EIN }}</td>
+                                    <td>{{ info.STATE }}</td>
+                                    <td>{{ info.Locality }}</td>
+                                    <td>{{ info.Address }}</td>
+                                    <td>{{ info.Zipcode }}</td>
+                                    <td>{{ info.SSN }}</td>
+
+                                </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+            {% else %}
+                <div class="alert alert-warning" role="alert">
+                    No users found.
+                </div>
+            {% endif %}
+        </div>
+    <p></p>
+        <div class="card-header bg-primary text-white">
+            <h3 class="mb-0">Employee Information</h3>
+        </div>
+        <div class="card-body">
+            {% if employeeinformation %}
+                <div class="table-responsive">
+                    <table class="table table-bordered table-striped table-hover align-middle">
+                        <thead class="table-light">
+                            <tr>
+                                <th>Unique Key</th>
+                                <th>(f)EM Zipcode</th>
+                                <th>(2)EM Fed Tax</th>
+                                <th>(4)EM SS Tax</th>
+                                <th>(e)EM Name</th>
+                                <th>(a)SSN</th>
+                                <th>(1)Income</th>
+                                <th>(b)EIN </th>
+                                <th>(f)EM Address</th>
+                                <th>(3)EM SS Income</th>
+                                <th>(6)Med TAX</th>
+                                <th>(1)AL TIPS</th>
+                                <th>(7)SS TIPS</th>
+                                <th>(10)Dependents</th>
+                                <th>(11)457 Plan</th>
+                                <th>(14)Other Plan</th>
+                                <th>(13)Employee Type</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for key, employeeinformation in employeeinformation.items %}
+                                <tr>
+                                    <td>{{ key }}</td>
+                                    <td>{{ employeeinformation.EM_Zipcode }}</td>
+                                    <td>{{ employeeinformation.EM_Fedtax }}</td>
+                                    <td>{{ employeeinformation.EM_SSTAX }}</td>
+                                    <td>{{ employeeinformation.EM_NAME }}</td>
+                                    <td>{{ employeeinformation.EM_SNN }}</td>
+                                    <td>{{ employeeinformation.EN_Income }}</td>
+                                    <td>{{ employeeinformation.EM_NUM }}</td>
+                                    <td>{{ employeeinformation.EM_Address }}</td>
+                                    <td>{{ employeeinformation.EM_SSincome }}</td>
+                                    <td>{{ employeeinformation.Med_TAX }}</td>
+                                    <td>{{ employeeinformation.AL_TIPS }}</td>
+                                    <td>{{ employeeinformation.SS_TIPS }}</td>
+                                    <td>{{ employeeinformation.dependents }}</td>
+                                    <td>{{ employeeinformation.e457_plan }}</td>
+                                    <td>{{ employeeinformation.otherplan }}</td>
+                                    <td>{{ employeeinformation.employee_type }}</td>
+                                </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+            {% else %}
+                <div class="alert alert-warning" role="alert">
+                    No users found.
+                </div>
+            {% endif %}
+        </div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

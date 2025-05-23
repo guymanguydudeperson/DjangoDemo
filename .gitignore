@@ -1,0 +1,6 @@
+.env
+__pycache__/
+*.pyc
+db.sqlite3
+venv/
+demo1-29443-firebase-adminsdk-fbsvc-678b0ca403.json
