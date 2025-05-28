@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f00276cc-18eb-4394-844f-8d26cc0262ca" name="Changes" comment="Updated to add better UI.&#10;Updated to complete presentaiton page&#10;Updated to finalize product.">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DjangoDemo/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/DjangoDemo/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaxCalculator/templates/FAQs.html" beforeDir="false" afterPath="$PROJECT_DIR$/TaxCalculator/templates/FAQs.html" afterDir="false" />
-    </list>
+    <list default="true" id="f00276cc-18eb-4394-844f-8d26cc0262ca" name="Changes" comment="Updated to add better UI.&#10;Updated to complete presentaiton page&#10;Updated to finalize product." />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -150,7 +146,7 @@
       <workItem from="1748306542247" duration="1086000" />
       <workItem from="1748309089597" duration="855000" />
       <workItem from="1748341628310" duration="820000" />
-      <workItem from="1748475491291" duration="740000" />
+      <workItem from="1748475491291" duration="1078000" />
     </task>
     <task id="LOCAL-00001" summary="Updated to add better UI.&#10;Updated to complete presentaiton page&#10;Updated to finalize product.">
       <option name="closed" value="true" />
@@ -160,7 +156,15 @@
       <option name="project" value="LOCAL" />
       <updated>1747997315671</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Updated to add better UI.&#10;Updated to complete presentaiton page&#10;Updated to finalize product.">
+      <option name="closed" value="true" />
+      <created>1748476610501</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1748476610501</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
