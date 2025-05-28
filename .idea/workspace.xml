@@ -4,28 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f00276cc-18eb-4394-844f-8d26cc0262ca" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/TaxCalculator/forms.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TaxCalculator/templates/collect_info.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TaxCalculator/templates/display_info.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/DjangoDemo.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/DjangoDemo.iml" afterDir="false" />
+    <list default="true" id="f00276cc-18eb-4394-844f-8d26cc0262ca" name="Changes" comment="Updated to add better UI.&#10;Updated to complete presentaiton page&#10;Updated to finalize product.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaxCalculator/firebase.py" beforeDir="false" afterPath="$PROJECT_DIR$/TaxCalculator/firebase.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaxCalculator/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/TaxCalculator/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DjangoDemo/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/DjangoDemo/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TaxCalculator/templates/FAQs.html" beforeDir="false" afterPath="$PROJECT_DIR$/TaxCalculator/templates/FAQs.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaxCalculator/templates/UnderstandingTax copy.html" beforeDir="false" afterPath="$PROJECT_DIR$/TaxCalculator/templates/UnderstandingTax.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaxCalculator/templates/UnderstandingW2 copy.html" beforeDir="false" afterPath="$PROJECT_DIR$/TaxCalculator/templates/UnderstandingW2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaxCalculator/templates/add_user.html" beforeDir="false" afterPath="$PROJECT_DIR$/TaxCalculator/templates/add_user.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaxCalculator/templates/edit_user.html" beforeDir="false" afterPath="$PROJECT_DIR$/TaxCalculator/templates/edit_user.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaxCalculator/templates/employee.html" beforeDir="false" afterPath="$PROJECT_DIR$/TaxCalculator/templates/employee.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaxCalculator/templates/font copy.css" beforeDir="false" afterPath="$PROJECT_DIR$/TaxCalculator/templates/font copy.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaxCalculator/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/TaxCalculator/templates/home.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaxCalculator/templates/info.html" beforeDir="false" afterPath="$PROJECT_DIR$/TaxCalculator/templates/info.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaxCalculator/templates/list_users.html" beforeDir="false" afterPath="$PROJECT_DIR$/TaxCalculator/templates/list_users.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaxCalculator/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/TaxCalculator/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaxCalculator/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/TaxCalculator/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vercel.json" beforeDir="false" afterPath="$PROJECT_DIR$/vercel.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -163,12 +145,30 @@
       <workItem from="1747571253559" duration="1886000" />
       <workItem from="1747702211658" duration="7850000" />
       <workItem from="1747744606687" duration="10223000" />
-      <workItem from="1747963336749" duration="1288000" />
+      <workItem from="1747963336749" duration="2500000" />
+      <workItem from="1748302215909" duration="309000" />
+      <workItem from="1748306542247" duration="1086000" />
+      <workItem from="1748309089597" duration="855000" />
+      <workItem from="1748341628310" duration="820000" />
+      <workItem from="1748475491291" duration="740000" />
     </task>
+    <task id="LOCAL-00001" summary="Updated to add better UI.&#10;Updated to complete presentaiton page&#10;Updated to finalize product.">
+      <option name="closed" value="true" />
+      <created>1747997315671</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1747997315671</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Updated to add better UI.&#10;Updated to complete presentaiton page&#10;Updated to finalize product." />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated to add better UI.&#10;Updated to complete presentaiton page&#10;Updated to finalize product." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

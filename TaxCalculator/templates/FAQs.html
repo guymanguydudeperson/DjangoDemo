@@ -3,17 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <title>FAQs</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #6C757D;
+        }
 
+        .accordion-container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 1rem;
+        }
+    </style>
 </head>
 
-
-
 <body>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-<nav
-        class="navbar navbar-expand-lg navbar-light bg-light">
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container-fluid">
         <a class="navbar-brand" href="{% url 'home' %}">EasyforEmployers</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -28,114 +34,199 @@
     </div>
 </nav>
 
-   <div class="p-2 mb-6 col-12 bg-secondary text-white align-self-center">
+<div class="p-2 mb-6 col-12 bg-secondary text-white align-self-center">
     <div class="row justify-content-center p-3 mb-2 bg-secondary text-white fs-1 ">
-        <p class="fw-lighter text-center"> FAQs</p>
+        <p class="fw-lighter text-center">FAQs</p>
     </div>
-       </div>
+</div>
 
-</a></li>
+<!-- Accordion wrapper -->
+<div class="accordion-container">
+    <div class="accordion" id="accordionExample">
 
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                        aria-expanded="true" aria-controls="collapseOne">
+                    How do I find my AGI?
+                </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <strong>Your AGI will be found on line 11 of your 2024 Form 1040, 1040-SR, and 1040-NR.</strong>
+                    If you plan to e-file your tax return, you may need to first find the amount of AGI from last year's
+                    return in order for the IRS to verify your identity.You can find your AGI on the form you used to
+                    file your last year's return.
+                </div>
+            </div>
+        </div>
 
-     <div class="accordion" id="accordionExample">
-  <div class="accordion-item">
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                    How do I file my taxes?
+                </button>
+            </h2>
+            <div id="collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <strong> Gather your W-2, </strong> choose a filing method (online, professional, or manual),
+                    complete your return, and submit it by April 15.
+                    <li><a href="{% url 'UnderstandingTax' %}">Click here for more info.</a></li>
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    What is a W-2, and why do I need it?
+                </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    A <strong>W-2 shows your annual earnings and taxes withheld. </strong> Employers must provide it by
+                    January 31.
+                    <li><a href="{% url 'UnderstandingW2' %}"> Learn more here.</a></li>
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    What is my EIN and what is it used for?
+                </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <strong>The employer identification number </strong> is a unique nine-digit number assigned by the
+                    Internal Revenue Service (IRS) to business entities operating in the United States for the purpose
+                    of identification.
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                    What is my SSN?
+                </button>
+            </h2>
+            <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    In the context of the United States, "SSN" stands for <strong> Social Security Number</strong> — a
+                    unique nine-digit number assigned to U.S. citizens and residents for tracking income and determining
+                    benefits.
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                    What is my zipcode?
+                </button>
+            </h2>
+            <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <strong>A Zipcode</strong> is a group of five or nine numbers that are added to a postal address to
+                    assist the sorting of mail.
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                    What is meant by "State wages, tips"?
+                </button>
+            </h2>
+            <div id="collapseSeven" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <strong>"State wages, tips" is the amount of money you earned in your state </strong> (like from
+                    your job), including: Your regular pay (wages), tips you reported, any other taxable income from
+                    your employer. This is the money that your state uses to calculate state income tax.
+                </div>
+            </div>
+        </div>
+<div class="accordion-item">
     <h2 class="accordion-header">
-      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-        How do I find my AGI?
-      </button>
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+            What are nonqualified plans (Box 11)?
+        </button>
     </h2>
-    <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
-      <div class="accordion-body">
-        <strong>Your AGI will be found on line 11 of your 2024 Form 1040, 1040-SR, and 1040-NR.</strong> If you plan to e-file your tax return, you may need to first find the amount of AGI from last year's return in order for the IRS to verify your identity.You can find your AGI on the form you used to file your last year's return.
-      </div>
+    <div id="collapseEight" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+            Nonqualified plans are retirement or deferred compensation plans that don’t meet IRS requirements for favorable tax treatment.
+            Employers report distributions from these plans in Box 11.
+        </div>
     </div>
-  </div>
+</div>
 
-                             <div class="accordion-item">
+<div class="accordion-item">
     <h2 class="accordion-header">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
- How do I file my taxes?
-      </button>
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+            What do the checkboxes in Box 13 mean?
+        </button>
     </h2>
-    <div id="collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-      <div class="accordion-body">
-        <strong> Gather your W-2, </strong> choose a filing method (online, professional, or manual), complete your return, and submit it by April 15.
-          <li><a href="{% url 'UnderstandingTax' %}">Click here for more info.</a></li>
-      </div>
+    <div id="collapseNine" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+            <ul>
+                <li><strong>Statutory employee:</strong> Your earnings are subject to Social Security and Medicare but not federal income tax withholding.</li>
+                <li><strong>Retirement plan:</strong> You participated in your employer’s retirement plan.</li>
+                <li><strong>Third-party sick pay:</strong> You received payments for sick leave through an insurance provider or third party.</li>
+            </ul>
+        </div>
     </div>
-  </div>
+</div>
 
-
-  <div class="accordion-item">
+<div class="accordion-item">
     <h2 class="accordion-header">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-        What is a W-2, and why do I need it?
-      </button>
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
+            What is reported in Box 14 – "Other"?
+        </button>
     </h2>
-    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-      <div class="accordion-body">
-        A <strong>W-2 shows your annual earnings and taxes withheld. </strong> Employers must provide it by January 31.
-          <li><a href="{% url 'UnderstandingW2' %}"> Learn more here.</a></li>
-
-      </div>
+    <div id="collapseTen" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+            Box 14 is used for miscellaneous information not reported elsewhere on the W-2, such as union dues, health insurance premiums, or vehicle allowances.
+            The exact meaning depends on what your employer puts there.
+        </div>
     </div>
-  </div>
-  <div class="accordion-item">
-    <h2 class="accordion-header">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-        What is my EIN and what is it used for?
-      </button>
-    </h2>
-    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-      <div class="accordion-body">
-        <strong>The employer identification number </strong> is a unique nine-digit number assigned by the Internal Revenue Service (IRS) to business entities operating in the United States for the purpose of identification.
-      </div>
-    </div>
-  </div>
-           <div class="accordion-item">
-    <h2 class="accordion-header">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
- What is my SSN?
-      </button>
-    </h2>
-    <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-      <div class="accordion-body">
-        In the context of the United States, "SSN" stands for <strong> Social Security Number</strong>a unique nine-digit number assigned to U.S. citizens and residents for tracking income and determining benefits.
-      </div>
-    </div>
-  </div>
+</div>
 
-                    <div class="accordion-item">
+<div class="accordion-item">
     <h2 class="accordion-header">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
- What is my zipcode?
-      </button>
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseEleven" aria-expanded="false" aria-controls="collapseEleven">
+            What are the codes in Box 12 used for?
+        </button>
     </h2>
-    <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-      <div class="accordion-body">
-        <strong> A Zipcode </strong> is a group of five or nine numbers that are added to a postal address to assist the sorting of mail.
-      </div>
+    <div id="collapseEleven" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+            Box 12 contains letter-coded information for specific types of compensation or deductions, such as:
+            <ul>
+                <li><strong>Code D:</strong> Contributions to a 401(k) plan</li>
+                <li><strong>Code DD:</strong> Cost of employer-sponsored health coverage</li>
+                <li>...and many more. Check the IRS instructions or your tax preparer for details.</li>
+            </ul>
+        </div>
     </div>
-                        <div class="accordion-item">
-    <h2 class="accordion-header">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSix">
- What is meant by "State wages, tips"?
-      </button>
-    </h2>
-    <div id="collapseSeven" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-      <div class="accordion-body">
-        <strong> "State wages, tips" is the amount of money you earned in your state </strong>  (like from your job), including:  Your regular pay (wages), tips you reported, any other taxable income from your employer. This is the money that your state uses to calculate state income tax.
-      </div>
-  </div>
-     </div>
+</div>
 
- <style>
-        body {
-            background-color: #6C757D;
-        }
-    </style>
+    </div>
+</div>
 
-<script
-        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 </html>
+
