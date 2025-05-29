@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f00276cc-18eb-4394-844f-8d26cc0262ca" name="Changes" comment="Updated to add better UI.&#10;Updated to complete presentaiton page&#10;Updated to finalize product." />
+    <list default="true" id="f00276cc-18eb-4394-844f-8d26cc0262ca" name="Changes" comment="Updated FAQ">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DjangoDemo/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/DjangoDemo/settings.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -146,7 +149,7 @@
       <workItem from="1748306542247" duration="1086000" />
       <workItem from="1748309089597" duration="855000" />
       <workItem from="1748341628310" duration="820000" />
-      <workItem from="1748475491291" duration="1078000" />
+      <workItem from="1748475491291" duration="3018000" />
     </task>
     <task id="LOCAL-00001" summary="Updated to add better UI.&#10;Updated to complete presentaiton page&#10;Updated to finalize product.">
       <option name="closed" value="true" />
@@ -164,7 +167,23 @@
       <option name="project" value="LOCAL" />
       <updated>1748476610501</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Updated FAQ">
+      <option name="closed" value="true" />
+      <created>1748476662582</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1748476662582</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Updated FAQ">
+      <option name="closed" value="true" />
+      <created>1748476706446</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1748476706446</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -172,17 +191,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Updated to add better UI.&#10;Updated to complete presentaiton page&#10;Updated to finalize product." />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated to add better UI.&#10;Updated to complete presentaiton page&#10;Updated to finalize product." />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/DjangoDemo/wsgi.py</url>
-          <line>9</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="Updated FAQ" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated FAQ" />
   </component>
 </project>
